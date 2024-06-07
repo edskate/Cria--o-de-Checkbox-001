@@ -1,0 +1,34 @@
+body{
+    color: aqua;
+    color: white; text-shadow: black 0.1em 0.1em 0.2em;
+    margin: 25px ;
+    
+}
+h2{
+    color: white;
+    font-size: 30px ;
+text-shadow: 1px 1px white, -1px -1px #444
+;
+}
+
+h3{
+    color: white;
+    font-size: 30px;
+text-shadow: -1px -1px white, 1px 1px #333;
+}
+p{
+    -webkit-text-stroke-width: 2px;
+-webkit-text-stroke-color: #000;
+font-size: 3em; color: #fffdd9;
+}
+h4{
+	color: rgb(255, 255, 255);
+	-webkit-text-stroke: 1px #4e0000;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px ;
+	text-shadow: 0px 10px 4px #23430C;
+}
+.id{
+    color: #0c3643;
+    text-shadow: 10px 10px 10px #000;
+}
