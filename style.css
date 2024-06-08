@@ -36,3 +36,29 @@ h4{
     color: #4e0000;
     text-shadow: 10px 10px 10px #000;
 }
+
+#diagonal{
+    transform: rotate(-45deg);
+}
+#vertical{
+    transform: rotate(-90deg);
+}
+*{margin: 0;
+padding: 0;
+
+}
+.image-wrapper > img {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+    width: 300px;
+}
+.image-wrapper > img{
+width: 100%;
+}
+.cut{
+    background: #fff;
+    display: block;
+    top: 0; bottom:0;
+}
