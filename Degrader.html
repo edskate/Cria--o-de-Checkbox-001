@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Degrader.</title>
+ <style>
+    body{
+        font-size: 25px;
+        
+    }
+    h1{
+        color: #4e0000;
+        text-shadow: 10px 10px 10px ;
+    }
+/*Exemplo apenas com 'color'*/
+    .single-color{
+color: #4e0000;
+
+}
+/* Agora, colocando um degrade*/
+.gradient{
+    /* Primeiro passo: definir: um degradê como fundo*/
+    background-image: linear-gradient(to bottom, rebeccapurple, steelblue, turquoise);
+/* Segundo passo: apagar do fundo tudo que não estiver imediatamente atrás de texto.*/
+
+    background-clip: text;
+    -webkit-background-clip: text; /* Alguns navegadores precisam de prefixo*/
+/*Terceiero passo: apagar o texto, deixando apenas o fundo atrás dele */
+    -webkit-text-fill-color: transparent;
+/* Cor que contraste com o degradê, caso o navegador não suporte 'background-clip:text'*/
+    color: black;
+/* Não relacionado ao degradê, apenas para melhorar a visualização*/
+    p{
+        font-size: 2rem;
+        font-weight: bold;
+        line-height: 1.1;
+    }
+
+}
+ </style>
+</head>
+<body>
+    <h1 id="degrader"> Texto Com Degradê.</h1>
+    <p class="single-color">Eu tenho só uma cor.</p>
+    <p class="gradient">Eu sou colorido! </p>
+    <p>A cor do texto em CSS é definida usando a propriedade <b>color.</b>  <br> Mas há maneiras de usar algo mais complexo do que apenas uma cor? <br> Dá  sim, é só olhar o titulo.</p>
+    <hr>
+
+</body>
+</html>
